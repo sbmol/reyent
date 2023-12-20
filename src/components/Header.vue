@@ -1,13 +1,13 @@
 <template>
   <div class="container">
         <header>
-        <div class="navHeader borderBottom">
-         <div class="row">
+        <div class="navHeader titleEffect">
+         <div class="row titleEffect">
+          <!-- <li class="listUl">
+            <span><i class="fa-brands fa-whatsapp fa-xl"> </i></span>
+          </li> -->
           <li class="listUl">
-            <span><i class="fa-brands fa-whatsapp fa-lg"> </i></span>
-          </li>
-          <li class="listUl">
-            <span><img src="../assets/py.png" alt="" class="flag"> <a href="https://wa.me//+595991423174" class="">+ (595) 991 xxx xxx</a></span>
+            <span><img src="../assets/py.png" alt="" class="flag"> <a href="https://wa.me//+595991423174" class="phoneLink">+ (595) 991 xxx xxx</a></span>
           </li>
         </div>
         <div class="row">
@@ -27,15 +27,21 @@
         <div class="navHeader">
           <div class="row">
                 <ul class="listUl">
-                  <li class="listUl"><img src="../assets/Reyent6.png" alt="" class="imgLogo"></li>
+                  <li class="listUl"><img src="../assets/whitelogo.png" alt="" class="imgLogo"></li>
                 </ul>
           </div>
-          <div class="row">
-            <li class="listUl"><a href="#">Inicio</a></li>
-            <li class="listUl"><a href="#">Nosotros</a></li>
-            <li class="listUl"><a href="#">Flota</a></li>
-            <li class="listUl"><a href="#">Contacto</a></li>
+         
+          <div class="hamburger-menu" @click="toggleMenu">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
           </div>
+          <div class="row" :class="{ 'show': isMenuVisible }" id="navLinks">
+      <li class="listUl"><a href="#" @click="toggleMenu">Inicio</a></li>
+      <li class="listUl"><a href="#" @click="toggleMenu">Nosotros</a></li>
+      <li class="listUl"><a href="#" @click="toggleMenu">Flota</a></li>
+      <li class="listUl"><a href="#" @click="toggleMenu">Contacto</a></li>
+    </div>
          
             </div>
            
@@ -46,7 +52,7 @@
                 <h3><span class="titleEffect">ECONOMICOS</span></h3>
                 <p class="">Consegui el mejor precio del mercado, disponible para entrega en Asuncion y gran Asuncion.</p>
                 <br>
-                <a href="" class="btnColor">SOLICITAR COTIZACION</a>
+                <a href="" class="btnColor">RESERVA AHORA</a>
                 
               </div>
             </div>
@@ -55,6 +61,16 @@
 </template>
 <script>
 export default {
+  data(){
+    return{
+      isMenuVisible: false,
+    };
+  },
+  methods: {
+    toggleMenu(){
+      this.isMenuVisible = !this.isMenuVisible;
+    }
+  }
   
 }
 </script>
@@ -84,7 +100,7 @@ body{
   justify-content: space-between;
   padding: 0;
   margin: 0;
-  background-color: #F3F8FF;
+  /* background-color: #F3F8FF; */
  
 }
 .borderBottom{
@@ -106,7 +122,7 @@ body{
 .listUl{
   display: inline-block;
   padding: 0 10px 0 10px;
-  color: #092635;
+  color: #F3F8FF;
   
 }
 .listLogo{
@@ -123,15 +139,15 @@ body{
 a:hover{
   border-bottom: 4px #FF6600 solid;
   transition: 5.ms;
-  color: #092635;
+  color: #F3F8FF;
   -ms-text-kashida-space: inherit;
   
 }
 a {
   text-decoration: none;
-  color:#092635;
+  color: #092635;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 24px;
 }
 .row{
   display: flex;
@@ -155,16 +171,15 @@ a {
 }
 .rowContainer{
   width: 45%;
-  height: 300px;
-  font-size: large;
+  max-height: 400px;
+  height: 400px;
+  margin: 0;
+  font-size: 1.2em;
   font-weight: bold;
   color: #092635;
   background-color: rgba(243, 248, 255, 0.5);
   padding: 10px;
   border-radius: 25px;
-  
-
-  /* border: 2px #092635 solid; */
 }
 .rowCenter{
   padding: 25px;
@@ -202,6 +217,47 @@ a {
   
   
 }
+#navLinks {
+  display: flex;
+  flex-direction: column;
+  background-color: #092635;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+#navLinks.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+#navLinks li {
+  margin-bottom: 10px;
+}
+
+#navLinks a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding-left: 10px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+}
+
 
 
 /* header responsive  */
@@ -209,9 +265,69 @@ a {
 
   .navHeader{
     font-size: 10px;
-    flex-direction: row;
+    flex-direction: column;
+    text-align: center;
   }
 
+  .row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .masterhead{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .rowContainer{
+    width: 90%;
+  }
+  body{
+    background-size:cover;
+  }
+  a{
+    color: #F3F8FF;
+  }
+  #navLinks {
+    display: flex;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+  .phoneLink{
+    font-size: 12px;
+    border-bottom: none;
+  }
+
+  /* from here the hamburguer menu */
+  
+
+
+}
+@media only screen and(max-width: 480px) {
+  .rowContainer{
+    width: 100%;
+    border-radius: 0;
+    padding: 10px;
+    align-items: center;
+
+  }
+  body{
+    background-size: contain;
+  }
+  #navLinks {
+    display: flex;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+  .row{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
 }
   
 </style>
