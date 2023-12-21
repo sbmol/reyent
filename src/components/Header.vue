@@ -1,13 +1,11 @@
 <template>
   <div class="container">
-        <header>
-        <div class="navHeader titleEffect">
-         <div class="row titleEffect">
-          <!-- <li class="listUl">
-            <span><i class="fa-brands fa-whatsapp fa-xl"> </i></span>
-          </li> -->
+    <header>
+      <div class="navHeader titleEffect">
+        <div class="row titleEffect">
           <li class="listUl">
-            <span><img src="../assets/py.png" alt="" class="flag"> <a href="https://wa.me//+595991423174" class="phoneLink">+ (595) 991 xxx xxx</a></span>
+            <span><img src="../assets/py.png" alt="" class="flag"> <a href="https://wa.me//+595991423174"
+                class="phoneLink">+ (595) 991 xxx xxx</a></span>
           </li>
         </div>
         <div class="row">
@@ -23,41 +21,43 @@
             </div>
           </ul>
         </div>
-        </div>
-        <div class="navHeader">
-          <div class="row">
-                <ul class="listUl">
-                  <li class="listUl"><img src="../assets/whitelogo.png" alt="" class="imgLogo"></li>
-                </ul>
-          </div>
-         
-          <div class="hamburger-menu" @click="toggleMenu">
-              <div class="bar"></div>
-              <div class="bar"></div>
-              <div class="bar"></div>
-          </div>
-          <div class="row" :class="{ 'show': isMenuVisible }" id="navLinks">
-      <li class="listUl"><a href="#" @click="toggleMenu">Inicio</a></li>
-      <li class="listUl"><a href="#" @click="toggleMenu">Nosotros</a></li>
-      <li class="listUl"><a href="#" @click="toggleMenu">Flota</a></li>
-      <li class="listUl"><a href="#" @click="toggleMenu">Contacto</a></li>
-    </div>
-         
-            </div>
-           
-          </header>
-          <div class="masterhead">
-              <div class="rowContainer">
-                <h1>ALQUILER DE AUTOS</h1>
-                <h3><span class="titleEffect">ECONOMICOS</span></h3>
-                <p class="">Consegui el mejor precio del mercado, disponible para entrega en Asuncion y gran Asuncion.</p>
-                <br>
-                <a href="" class="btnColor">RESERVA AHORA</a>
-                
-              </div>
-            </div>
-    
       </div>
+      <div class="navHeader">
+        <div class="row">
+          <ul class="listUl">
+            <li class="listUl"><img src="../assets/whitelogo.png" alt="" class="imgLogo"></li>
+          </ul>
+        </div>
+        <div class="row" >
+          <ul class="listUl">
+            <li class="listUl"><a href="#" @click="toggleMenu">Inicio</a></li>
+            <li class="listUl"><a href="#" @click="toggleMenu">Nosotros</a></li>
+            <li class="listUl"><a href="#" @click="toggleMenu">Flota</a></li>
+            <li class="listUl"><a href="#" @click="toggleMenu">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="hamburger-menu" @click="toggleMenu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+
+     
+        
+      </div>
+    </header>
+    <div class="masterhead">
+      <div class="rowContainer">
+        <h1>Alquiler de autos</h1>
+        <h3><span class="titleEffect">ECONOMICOS</span></h3>
+        <p class="">Consegui el mejor precio del mercado, disponible para entrega en Asuncion y gran Asuncion.</p>
+        <br>
+        <a href="" class="btnColor">RESERVA AHORA</a>
+
+      </div>
+    </div>
+
+  </div>
 </template>
 <script>
 export default {
@@ -75,11 +75,10 @@ export default {
 }
 </script>
 <style>
-
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@200;400&display=swap');
 
 *{
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Noto Sans Display', sans-serif;
 }
 
 body{
@@ -257,6 +256,9 @@ a {
   background-color: #fff;
   margin: 5px 0;
 }
+.phoneLink{
+  font-size: medium;
+}
 
 
 
@@ -326,7 +328,7 @@ a {
   .row{
     display: flex;
     flex-direction: column;
-    text-align: center;
+    
   }
 }
   

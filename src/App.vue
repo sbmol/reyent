@@ -5,12 +5,15 @@
   </nav>
   <router-view /> -->
 <Header />
+<Services />
 </template>
 <script>
   import Header from './components/Header.vue'
+  import Services from './components/Services.vue'
   export default {
     components: {
       Header, 
+      Services, 
     }
   }
 </script>
