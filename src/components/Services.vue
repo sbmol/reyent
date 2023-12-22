@@ -1,5 +1,5 @@
 <template>
-  <div class="serviceContainer">
+  <div class="serviceContainer" id="nosotros">
     <h2>Por que elegir nuestro servicios</h2>
     <p class="secoundaryTitle">Descubre un servicio de alquiler de automóviles excepcional con nuestro equipo experto. En <span class="txtColor">REYENT</span>, no solo encontrarás vehículos de primera categoría, sino también beneficios exclusivos diseñados para ti. Experimenta la diferencia con expertos locales que hacen que cada viaje sea especial. ¡Bienvenido a una experiencia única en cada kilómetro!</p>
     <div class="serviceBox">

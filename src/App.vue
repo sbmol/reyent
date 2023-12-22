@@ -6,17 +6,20 @@
   <router-view /> -->
 <Header />
 <Services />
-<Who />
+<!-- <Who /> -->
+<Footer />
 </template>
 <script>
   import Header from './components/Header.vue'
   import Services from './components/Services.vue'
-  import Who from './components/who.vue'
+  // import Who from './components/who.vue'
+  import Footer from './components/Footer.vue'
   export default {
     components: {
       Header, 
       Services, 
-      Who, 
+      // Who, 
+      Footer,
     }
   }
 </script>

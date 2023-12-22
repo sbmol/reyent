@@ -86,7 +86,7 @@ export default {
 body{
   padding: 0;
   margin: 0;
-  background: linear-gradient(to left, #191919, transparent), url("../assets/fondo.png");
+  background: linear-gradient(to left, #191919, transparent), url("../assets/hyundai.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
