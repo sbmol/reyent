@@ -6,14 +6,17 @@
   <router-view /> -->
 <Header />
 <Services />
+<Who />
 </template>
 <script>
   import Header from './components/Header.vue'
   import Services from './components/Services.vue'
+  import Who from './components/who.vue'
   export default {
     components: {
       Header, 
       Services, 
+      Who, 
     }
   }
 </script>

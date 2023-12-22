@@ -25,13 +25,13 @@
       <div class="navHeader">
         <div class="row">
           <ul class="listUl">
-            <li class="listUl"><img src="../assets/whitelogo.png" alt="" class="imgLogo"></li>
+            <li class="listUl"><img src="../assets/R.png" alt="" class="imgLogo"></li>
           </ul>
         </div>
         <div class="row" >
           <ul class="listUl">
             <li class="listUl"><a href="#" @click="toggleMenu">Inicio</a></li>
-            <li class="listUl"><a href="#" @click="toggleMenu">Nosotros</a></li>
+            <li class="listUl"><a href="#nosotros" @click="toggleMenu">Nosotros</a></li>
             <li class="listUl"><a href="#" @click="toggleMenu">Flota</a></li>
             <li class="listUl"><a href="#" @click="toggleMenu">Contacto</a></li>
           </ul>
@@ -48,8 +48,9 @@
     </header>
     <div class="masterhead">
       <div class="rowContainer">
-        <h1>Alquiler de autos</h1>
-        <h3><span class="titleEffect">ECONOMICOS</span></h3>
+        <h1>RESERVA TU AUTO HOY!</h1>
+        <h3><span class="txtBgColor">3X2 reservando hoy!</span></h3>
+        <h3></h3>
         <p class="">Consegui el mejor precio del mercado, disponible para entrega en Asuncion y gran Asuncion.</p>
         <br>
         <a href="" class="btnColor">RESERVA AHORA</a>
@@ -78,13 +79,14 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@200;400&display=swap');
 
 *{
-  font-family: 'Noto Sans Display', sans-serif;
+  /* font-family: 'Noto Sans Display', sans-serif; */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body{
   padding: 0;
   margin: 0;
-  background: url('../assets/fondo.png');
+  background: linear-gradient(to left, #191919, transparent), url("../assets/fondo.png");
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -92,6 +94,7 @@ body{
   background-attachment: fixed;
   
 }
+
 
 .navHeader{
   display: flex;
@@ -111,7 +114,7 @@ body{
   justify-content: space-between;
   padding: 0;
   margin: 0;
-  background-color: #FF6600;
+  background-color: #1CD6CE;
   
 }
 .textColor {
@@ -136,25 +139,26 @@ body{
   height: 15px;
 }
 a:hover{
-  border-bottom: 4px #FF6600 solid;
+  border-bottom: 4px #BED754 solid;
   transition: 5.ms;
   color: #F3F8FF;
   -ms-text-kashida-space: inherit;
   
 }
+
 a {
   text-decoration: none;
-  color: #092635;
+  color: #BED754;
   font-weight: bold;
-  font-size: 24px;
+  text-transform: uppercase;
 }
 .row{
   display: flex;
   align-items: center;
 }
 .imgLogo{
-  width: 15em;
-  height: 5em;
+  width: 10em;
+  height: 10em;
 }
 
 /* MASTERHEAD INSIDE HEADER */
@@ -163,22 +167,22 @@ a {
   flex-direction: row;
   max-width: 100%;
   height: 400px;
-  color: #000;
+  color: #F3F8FF;
   justify-content: right;
-  align-items: center;
+  align-items: right;
   padding: 50px;
 }
 .rowContainer{
-  width: 45%;
+  width: 55%;
   max-height: 400px;
   height: 400px;
   margin: 0;
   font-size: 1.2em;
   font-weight: bold;
-  color: #092635;
-  background-color: rgba(243, 248, 255, 0.5);
+  color: #F3F8FF;
+  /* background-color: rgba(243, 248, 255, 0.5); */
   padding: 10px;
-  border-radius: 25px;
+  border-radius: 15px;
 }
 .rowCenter{
   padding: 25px;
@@ -190,9 +194,14 @@ a {
   height: 15em;
 }
 .titleEffect{
-  background: #FF6600;
+  background: #191919;
   padding: 5px;
-  color: #fff;
+  color: #BED754;
+}
+.txtBgColor{
+  background-color: #BED754;
+  color: #191919;
+  padding: 5px;
   
 }
 .titleEffect2{
@@ -204,17 +213,19 @@ a {
 }
 .btnColor{
   padding: 10px;
-  background-color: #092635;
+  background-color: #191919;
   color: #F3F8FF;
   transition: background-color 0.3s ease, color 0.3s ease;
   cursor: pointer;
+  border-left: 5px #BED754 solid;
+  transform: skew(-20deg);
+  
 }
 .btnColor:hover{
-  background-color: #FF6600;
-  color: #092635;
+  background-color: #BED754;
+  color: #191919;
   border-bottom: none;
-  
-  
+  border-right: 5px solid #F3F8FF;
 }
 #navLinks {
   display: flex;
@@ -258,6 +269,10 @@ a {
 }
 .phoneLink{
   font-size: medium;
+  border-bottom: none !important;
+  color: #F3F8FF !important;
+  font-weight: bold;
+  
 }
 
 
@@ -300,6 +315,9 @@ a {
   .phoneLink{
     font-size: 12px;
     border-bottom: none;
+    color: #1CD6CE !important;
+    font-weight: bold;
+    text-decoration: none;
   }
 
   /* from here the hamburguer menu */

@@ -65,13 +65,14 @@ export default {
   padding: 25px;
 }
 .txtDecorationService{
-  background-color: #ff6600;
-  color: #F3F8FF;
+  background-color: #BED754;
+  color: #191919;
   padding: 15px;
+  font-weight: bold;
 
 }
 .txtColor{
-  color:#ff6600;
+  color:#293462;
   font-weight: bold;
 }
 .txtServiceMute{
