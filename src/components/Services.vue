@@ -16,7 +16,7 @@ Contratamos a los mejores expertos en todo lo referente al alquiler de coches.</
       </div>
       <div class="serviceCard">
         <img src="../assets/message.svg"  alt="" class="svgImg">
-        <div class="txtDecorationService">Atencion 24/7</div>
+        <div class="txtDecorationService">24/7</div>
         <p class="txtServiceMute">
 Nuestro equipo garantiza un soporte confiable además de los servicios ofrecidos.</p>
       </div>
@@ -36,6 +36,18 @@ export default {
 }
 </script>
 <style>
+
+.button{
+  width: 100px; 
+  height: 30px; 
+  background: #BED635;
+  -webkit-transform: skew(-25deg, 0deg);
+  -moz-transform: skew(-25deg, 0deg);
+  -ms-transform: skew(-25deg, 0deg);
+  -o-transform: skew(-25deg, 0deg);
+  transform: skew(-25deg, 0deg);
+}
+
 
 .serviceContainer{
   display: flex;
@@ -104,6 +116,9 @@ export default {
  @media only screen and(max-width: 480px){
   .serviceCard{
     flex: 0 0 100%;
+  }
+  .txtDecorationService{
+    font-size: 10px;
   }
 
  }

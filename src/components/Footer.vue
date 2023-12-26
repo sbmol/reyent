@@ -88,8 +88,9 @@ export default {
     align-items: center;
   }
   .footerBox{
-    max-width: 100%;
+    width: 80%;
   }
+  
  
 }
 </style>

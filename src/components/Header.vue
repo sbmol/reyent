@@ -9,7 +9,7 @@
           </li>
         </div>
         <div class="row">
-          <ul>
+          <ul class="listUl">
             <li class="listUl">
               <span><i class="fa-brands fa-instagram fa-lg"></i></span>
             </li>
@@ -32,7 +32,7 @@
           <ul class="listUl">
             <li class="listUl"><a href="#" @click="toggleMenu">Inicio</a></li>
             <li class="listUl"><a href="#nosotros" @click="toggleMenu">Nosotros</a></li>
-            <li class="listUl"><a href="#" @click="toggleMenu">Flota</a></li>
+            <li class="listUl"><a href="#fleet" @click="toggleMenu">Flota</a></li>
             <li class="listUl"><a href="#" @click="toggleMenu">Contacto</a></li>
           </ul>
         </div>
@@ -318,7 +318,7 @@ a {
   .phoneLink{
     font-size: 12px;
     border-bottom: none;
-    color: #1CD6CE !important;
+    color: #BED635 !important;
     font-weight: bold;
     text-decoration: none;
   }
@@ -349,6 +349,7 @@ a {
   .row{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     
   }
 }
