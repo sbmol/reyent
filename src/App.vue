@@ -5,8 +5,10 @@
   </nav>
   <router-view /> -->
 <Header />
+<Fleet />
 <Services />
 <!-- <Who /> -->
+
 <Footer />
 </template>
 <script>
@@ -14,12 +16,14 @@
   import Services from './components/Services.vue'
   // import Who from './components/who.vue'
   import Footer from './components/Footer.vue'
+  import Fleet from './components/Fleet.vue'
   export default {
     components: {
       Header, 
       Services, 
       // Who, 
       Footer,
+      Fleet,
     }
   }
 </script>

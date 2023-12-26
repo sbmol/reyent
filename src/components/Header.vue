@@ -48,7 +48,7 @@
     </header>
     <div class="masterhead">
       <div class="rowContainer">
-        <h1>RESERVA TU AUTO HOY!</h1>
+        <h1 class="h1Leading">RESERVA TU AUTO HOY!</h1>
         <h3><span class="txtBgColor">3X2 reservando hoy!</span></h3>
         <h3></h3>
         <p class="">Consegui el mejor precio del mercado, disponible para entrega en Asuncion y gran Asuncion.</p>
@@ -76,11 +76,11 @@ export default {
 }
 </script>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@700&display=swap');
 
 *{
   /* font-family: 'Noto Sans Display', sans-serif; */
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Commissioner', sans-serif;
 }
 
 body{
@@ -93,6 +93,9 @@ body{
   min-height: 500px;
   background-attachment: fixed;
   
+}
+.h1Leading{
+  letter-spacing: 2px;
 }
 
 
