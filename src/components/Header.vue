@@ -34,6 +34,9 @@
             <li class="listUl"><a href="#nosotros" @click="toggleMenu">Nosotros</a></li>
             <li class="listUl"><a href="#fleet" @click="toggleMenu">Flota</a></li>
             <li class="listUl"><a href="#" @click="toggleMenu">Contacto</a></li>
+            <li class="listUl">
+              <router-link to="/leasing" @click="toggleMenu">LEASING</router-link>  
+            </li>
           </ul>
         </div>
         <div class="hamburger-menu" @click="toggleMenu">
@@ -59,22 +62,36 @@
     </div>
 
   </div>
+  <RouterView />
 </template>
 <script>
+// import { mapActions } from 'vuex';
+import { useRouter } from 'vue-router'
+
 export default {
-  data(){
-    return{
-      isMenuVisible: false,
+  data() {
+    return {
+      isMenuVisible: false
     };
   },
   methods: {
-    toggleMenu(){
+    toggleMenu() {
       this.isMenuVisible = !this.isMenuVisible;
-    }
+    },
+    // navigateToLeasing() {
+    //   const router = useRouter(); // Obtiene la instancia del enrutador
+    //   router.push('/leasing'); // Usa la instancia del enrutador obtenida
+    // }
+  },
+  name: "Leasing",
+  setup(){
+    const router = useRouter()
+    router.push("/leasing")
   }
   
-}
+};
 </script>
+
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@700&display=swap');
 
@@ -154,6 +171,16 @@ a {
   color: #BED754;
   font-weight: bold;
   text-transform: uppercase;
+}
+.buttom{
+  width: 100px; 
+  height: 30px; 
+  background: #BED635;
+  -webkit-transform: skew(-25deg, 0deg);
+  -moz-transform: skew(-25deg, 0deg);
+  -ms-transform: skew(-25deg, 0deg);
+  -o-transform: skew(-25deg, 0deg);
+  transform: skew(-25deg, 0deg);
 }
 .row{
   display: flex;
