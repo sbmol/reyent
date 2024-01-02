@@ -2,29 +2,20 @@
   <!-- <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
-  </nav>
-  <router-view /> -->
-<Header />
-<Fleet />
-<Services />
-<!-- <Who /> -->
+  </nav> -->
+  
+  <RouterView />
+ 
 
-<Footer />
 </template>
 <script>
-  import Header from './components/Header.vue'
-  import Services from './components/Services.vue'
-  // import Who from './components/who.vue'
-  import Footer from './components/Footer.vue'
-  import Fleet from './components/Fleet.vue'
+import HomeView from './views/HomeView.vue';
+
+
   export default {
     components: {
-      Header, 
-      Services, 
-      // Who, 
-      Footer,
-      Fleet,
-    }
+    HomeView
+}
   }
 </script>
 

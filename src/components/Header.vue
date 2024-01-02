@@ -30,12 +30,12 @@
         </div>
         <div class="row" >
           <ul class="listUl">
-            <li class="listUl"><a href="#" @click="toggleMenu">Inicio</a></li>
+            <RouterLink to="/">Inicio</RouterLink>
             <li class="listUl"><a href="#nosotros" @click="toggleMenu">Nosotros</a></li>
             <li class="listUl"><a href="#fleet" @click="toggleMenu">Flota</a></li>
             <li class="listUl"><a href="#" @click="toggleMenu">Contacto</a></li>
             <li class="listUl">
-              <router-link to="/leasing" @click="toggleMenu">LEASING</router-link>  
+              <router-link to="/leasing">Leasing</router-link>
             </li>
           </ul>
         </div>
@@ -49,20 +49,8 @@
         
       </div>
     </header>
-    <div class="masterhead">
-      <div class="rowContainer">
-        <h1 class="h1Leading">RESERVA TU AUTO HOY!</h1>
-        <h3><span class="txtBgColor">3X2 reservando hoy!</span></h3>
-        <h3></h3>
-        <p class="">Consegui el mejor precio del mercado, disponible para entrega en Asuncion y gran Asuncion.</p>
-        <br>
-        <a href="" class="btnColor">RESERVA AHORA</a>
-
-      </div>
-    </div>
 
   </div>
-  <RouterView />
 </template>
 <script>
 // import { mapActions } from 'vuex';
@@ -78,22 +66,15 @@ export default {
     toggleMenu() {
       this.isMenuVisible = !this.isMenuVisible;
     },
-    // navigateToLeasing() {
-    //   const router = useRouter(); // Obtiene la instancia del enrutador
-    //   router.push('/leasing'); // Usa la instancia del enrutador obtenida
-    // }
+    
   },
-  name: "Leasing",
-  setup(){
-    const router = useRouter()
-    router.push("/leasing")
-  }
+
   
 };
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400&display=swap');
 
 *{
   /* font-family: 'Noto Sans Display', sans-serif; */
