@@ -22,10 +22,10 @@
           </ul>
         </div>
       </div>
-      <div class="navHeader">
+      <div class="navHeader bgHeader">
         <div class="row">
           <ul class="listUl">
-            <li class="listUl"><img src="../assets/Reyen1.png" alt="reyent" class="imgLogo"></li>
+            <li class="listUl"><img src="../assets/reyent.png" alt="reyent" class="imgLogo"></li>
           </ul>
         </div>
         <div class="row" >
@@ -97,7 +97,9 @@ body{
   letter-spacing: 2px;
 }
 
-
+.bgHeader{
+  background-color: #F8FAEA;
+}
 .navHeader{
   display: flex;
   flex-direction: row;
@@ -141,16 +143,16 @@ body{
   height: 15px;
 }
 a:hover{
-  border-bottom: 4px #BED754 solid;
+  border-bottom: 4px #BED635 solid;
   transition: 5.ms;
-  color: #F3F8FF;
+  color: #191919;
   -ms-text-kashida-space: inherit;
   
 }
 
 a {
   text-decoration: none;
-  color: #BED754;
+  color: #191919;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -169,8 +171,8 @@ a {
   align-items: center;
 }
 .imgLogo{
-  width: 20em;
-  height: 10em;
+  width: 10.625em;
+  height: 3.375em;
 }
 
 /* MASTERHEAD INSIDE HEADER */
@@ -315,7 +317,7 @@ a {
     background-size:cover;
   }
   a{
-    color: #F3F8FF;
+    color: #191919;
   }
   #navLinks {
     display: flex;
@@ -331,6 +333,7 @@ a {
     font-weight: bold;
     text-decoration: none;
   }
+  
 
   /* from here the hamburguer menu */
   
@@ -360,6 +363,10 @@ a {
     flex-direction: column;
     justify-content: center;
     
+  }
+  .titleEffect{
+    display: flex;
+    align-items: center;
   }
 }
   

@@ -3,7 +3,7 @@
     <div class="footerBox">
 
       <div class="footerCard">
-        <img src="../assets/R.png" alt="reyent" class="imgFooter">
+        <img src="../assets/reyent.png" alt="reyent" class="imgFooter">
         <p class="txtSmall">
           Es un servicio de alquiler de automóviles a nivel nacional que ofrece automóviles y vehículos de cualquier tamaño y fabricación a un precio accesible y razonable.</p>
       </div>
@@ -58,8 +58,8 @@ export default {
   padding: 10px;
 }
 .imgFooter{
-  width: 150px;
-  height: 150px;
+  width: 10em;
+  height: 3.647em;
 }
 .txtSmall{
   font-size: small;
