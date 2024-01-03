@@ -33,7 +33,10 @@
             <RouterLink to="/">Inicio</RouterLink>
             <li class="listUl"><a href="#nosotros" @click="toggleMenu">Nosotros</a></li>
             <li class="listUl"><a href="#fleet" @click="toggleMenu">Flota</a></li>
-            <li class="listUl"><a href="#" @click="toggleMenu">Contacto</a></li>
+            <li class="listUl">
+              <a @click="openPopup">Contacto</a>
+              
+            </li>
             <li class="listUl">
               <router-link to="/leasing">Leasing</router-link>
             </li>
@@ -51,23 +54,26 @@
     </header>
 
   </div>
+  <FormPopup v-if="showPopup" @close="showPopup = false"/>
 </template>
 <script>
 // import { mapActions } from 'vuex';
-import { useRouter } from 'vue-router'
+import FormPopup from './FormPopup.vue';
 
 export default {
-  data() {
-    return {
-      isMenuVisible: false
-    };
+ data(){
+  return{
+    showPopup: false,
+  };
+ },
+ methods: {
+  openPopup(){
+    this.showPopup = true
   },
-  methods: {
-    toggleMenu() {
-      this.isMenuVisible = !this.isMenuVisible;
-    },
-    
-  },
+ },
+ components: {
+  FormPopup,
+ }
 
   
 };
