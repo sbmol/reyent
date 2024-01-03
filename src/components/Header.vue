@@ -25,7 +25,7 @@
       <div class="navHeader">
         <div class="row">
           <ul class="listUl">
-            <li class="listUl"><img src="../assets/R.png" alt="" class="imgLogo"></li>
+            <li class="listUl"><img src="../assets/Reyen1.png" alt="reyent" class="imgLogo"></li>
           </ul>
         </div>
         <div class="row" >
@@ -84,12 +84,13 @@ export default {
 body{
   padding: 0;
   margin: 0;
-  background: linear-gradient(to left, #191919, transparent), url("../assets/hyundai.jpg");
+  background: linear-gradient(to right, rgba(25, 25, 25, 0.9 ), transparent), url("../assets/hyundai.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   min-height: 500px;
   background-attachment: fixed;
+ 
   
 }
 .h1Leading{
@@ -168,7 +169,7 @@ a {
   align-items: center;
 }
 .imgLogo{
-  width: 10em;
+  width: 20em;
   height: 10em;
 }
 
