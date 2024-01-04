@@ -1,58 +1,46 @@
 <template >
-  <div class="form-popup-overlay">
-    <div class="formContainer">
-      <button @click="closePopup" class="close-button">Cerrar</button>
-      <div class="formRow">
-        <img src="../assets/reyent.png" alt="reyent" class="imgLogoForm">
-        <h4><b>Contactanos !!</b></h4>
-        <small>Completa el formulario de contacto, para solicitar cotizacion o informacion sobre los servicios que prestamos.</small> <br/>
-        <small>Tambien puede llamarnos a los siguientes numeros: </small>
-        <h4>Ventas</h4>
-        <p><i class="fa-brands fa-whatsapp fa-1x"><a href="https://wa.me/1XXXXXXXXXX" target="_blank"> +595 (09xx) 555 555</a></i></p>
-        <h4>Asistencia mecanica</h4>
-        <p><i class="fa-solid fa-wrench"></i> <a href="https://wa.me/1XXXXXXXXXX" target="_blank"> +595 (09xx) 555 555</a></p>
-      
+    <div class="form-popup-overlay">
+      <div class="formContainer">
+        <button @click="closePopup" class="close-button">Cerrar</button>
+        <div class="formRow">
+          <img src="../assets/reyent.png" alt="reyent" class="imgLogoForm">
+          <h4><b>Contactanos !!</b></h4>
+          <small>Completa el formulario de contacto, para solicitar cotizacion o informacion sobre los servicios que
+            prestamos.</small> <br />
+          <small>Tambien puede llamarnos a los siguientes numeros: </small>
+          <h4>Ventas</h4>
+          <p><i class="fa-brands fa-whatsapp fa-1x"><a href="https://wa.me/1XXXXXXXXXX" target="_blank"> +595 (09xx) 555
+                555</a></i></p>
+          <h4>Asistencia mecanica</h4>
+          <p><i class="fa-solid fa-wrench"></i> <a href="https://wa.me/1XXXXXXXXXX" target="_blank"> +595 (09xx) 555
+              555</a></p>
+        </div>
+        <div class="formRow">
+          <form ref="form" @submit.prevent="sendEmail">
+            <label>Nombre:</label>
+            <input name="user_name" type="text" required class="input-field"  />
+            <label >Correo Electronico:</label>
+            <input name="user_email" type="email" required class="input-field"  />
+            <label>Mensaje: </label>
+            <textarea name="message" cols="30" rows="10" required class="input-field"></textarea>
+            <button type="submit" class="btnColor" value="send">Enviar</button>
+          </form>
+        </div>
       </div>
-      <div class="formRow">
-        <form @submit.prevent="sendEmail">
-      <label for="name">Nombre:</label>
-      <input type="text" v-model="formData.name" required class="input-field"/>
-      <label for="email">Correo Electronico:</label>
-      <input type="email" v-model="formData.email" required class="input-field"/>
-      <label for="message">Mensaje: </label>
-      <textarea  cols="30" rows="10" v-model="formData.message" required class="input-field" ></textarea>
-
-      <button type="submit" class="btnColor">Enviar</button>
-      </form>
-      </div>
-      
-    
-      
-  </div>
-  
-  </div>
+    </div>
 </template>
 <script>
-import emailjs from "emailjs-com"
+import emailjs from '@emailjs/browser';
 export default {
-  data(){
-      return{
-        formData: {
-          name: "",
-          email: "",
-          message: "",
-        },
-      };
-  },
   methods: {
     sendEmail(){
-      emailjs.send("serviceID", "templateID", this.formData, "userID").then(
-  (response) => {
-    console.log("Email enviado con éxito", response);
+      emailjs.sendForm("service_aj3zb0n", "template_xcylbdt", this.$refs.form, "s26gdd6tw-DTgi3w5").then(
+  (result) => {
+    console.log("Email enviado con éxito", result.text);
     this.closePopup();
   },
   (error) => {
-    console.error("Error al enviar el email", error);
+    console.error("Error al enviar el email", error.text);
   }
 );
       // aqui dejamos para el metodo de envio
