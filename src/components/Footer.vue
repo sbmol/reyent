@@ -6,6 +6,7 @@
         <img src="../assets/reyent.png" alt="reyent" class="imgFooter">
         <p class="txtSmall">
           Es un servicio de alquiler de automóviles a nivel nacional, contamos con una gran variedad de modelos a un precio accesible y razonable.</p>
+        <p><router-link to="/terminos">Terminos y condiciones</router-link></p>
       </div>
     </div>
     <div class="footerBox">

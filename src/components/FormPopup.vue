@@ -5,15 +5,14 @@
         <div class="formRow">
           <img src="../assets/reyent.png" alt="reyent" class="imgLogoForm">
           <h4><b>Contactanos !!</b></h4>
-          <small>Completa el formulario de contacto, para solicitar cotizacion o informacion sobre los servicios que
-            prestamos.</small> <br />
+          <p>Completa el formulario de contacto, para solicitar cotizacion o informacion sobre los servicios que
+            prestamos.</p>
           <small>Tambien puede llamarnos a los siguientes numeros: </small>
           <h4>Ventas</h4>
-          <p><i class="fa-brands fa-whatsapp fa-1x"><a href="https://wa.me/1XXXXXXXXXX" target="_blank"> +595 (09xx) 555
-                555</a></i></p>
-          <h4>Asistencia mecanica</h4>
-          <p><i class="fa-solid fa-wrench"></i> <a href="https://wa.me/1XXXXXXXXXX" target="_blank"> +595 (09xx) 555
-              555</a></p>
+          <p><i class="fa-brands fa-whatsapp fa-1x"><a href="https://wa.me/595971593188" target="_blank"> +595 971 593188</a></i></p>
+          <h4>Emergencias</h4>
+          <p><i class="fa-solid fa-wrench"></i> <a href="https://wa.me/595971320667" target="_blank"> +595 971 320667</a></p>
+          <p><i class="fa-solid fa-wrench"></i> <a href="https://wa.me/595981181166" target="_blank"> +595 981 181166</a></p>
         </div>
         <div class="formRow">
           <form ref="form" @submit.prevent="sendEmail">
