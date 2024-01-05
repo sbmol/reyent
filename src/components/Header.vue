@@ -42,17 +42,13 @@
             </li>
           </ul>
         </div>
-        <div class="hamburger-menu" @click="toggleMenu">
+        <!-- <div class="hamburger-menu" @click="toggleMenu">
           <div class="bar"></div>
           <div class="bar"></div>
           <div class="bar"></div>
-        </div>
-
-     
-        
+        </div> -->
       </div>
     </header>
-
   </div>
   <FormPopup v-if="showPopup" @close="showPopup = false"/>
 </template>
