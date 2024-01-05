@@ -5,13 +5,13 @@
       <div class="footerCard">
         <img src="../assets/reyent.png" alt="reyent" class="imgFooter">
         <p class="txtSmall">
-          Es un servicio de alquiler de automóviles a nivel nacional que ofrece automóviles y vehículos de cualquier tamaño y fabricación a un precio accesible y razonable.</p>
+          Es un servicio de alquiler de automóviles a nivel nacional, contamos con una gran variedad de modelos a un precio accesible y razonable.</p>
       </div>
     </div>
     <div class="footerBox">
       <div class="footerCard">
         <p><b>Encontramos en:</b></p>
-        <p class="txtSmall">Calle Jose Falcon Nro. xxx entre Alberdi y Chile</p>
+        <p class="txtSmall">Calle Jose Falcon entre Alberdi y Chile</p>
         <p class="txtSmall"><b>Lunes a Viernes</b></p>
         <p class="txtSmall boxHour">08:00 a 18:00HS.</p>
         <p class="txtSmall "><b>Sabados</b></p>
@@ -25,7 +25,7 @@
           <i class="fa-brands fa-x fa-xl paddingIcons"></i>
           <p class="txtSmall"><b>Contactos:</b></p>
           <p class="txtSmall">Emergencias 24/7</p>
-          <span class="txtSmall"> <i class="fa-brands fa-whatsapp">+(595)991 xxx-xxx</i></span>
+          <span class="txtSmall"> <i class="fa-brands fa-whatsapp">+(595)971 593188</i></span>
       </div>
     </div>
   </div>
@@ -59,7 +59,7 @@ export default {
 }
 .imgFooter{
   width: 10em;
-  height: 3.647em;
+  height: auto;
 }
 .txtSmall{
   font-size: small;

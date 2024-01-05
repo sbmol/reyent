@@ -6,7 +6,7 @@
       <div class="serviceCard">
         <img src="../assets/percent.svg"  alt="" class="svgImg">
         <div class="txtDecorationService">Precios Bajos</div>
-        <p class="txtServiceMute">En Reyen ofrecemos servicios de primera clase a un precio asequible.</p>
+        <p class="txtServiceMute">En Reyen ofrecemos servicios de primera clase a un precio accesible.</p>
       </div>
       <div class="serviceCard">
         <img src="../assets/staff.svg"  alt="" class="svgImg">
@@ -84,8 +84,9 @@ export default {
 
 }
 .txtColor{
-  color:#293462;
+  color:#191919;
   font-weight: bold;
+  text-decoration: underline #BED635;
 }
 .txtServiceMute{
   color: rgba(9, 38, 53, 0.5);

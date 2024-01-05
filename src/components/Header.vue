@@ -4,8 +4,8 @@
       <div class="navHeader titleEffect">
         <div class="row titleEffect">
           <li class="listUl">
-            <span><img src="../assets/py.png" alt="" class="flag"> <a href="https://wa.me//+595991423174"
-                class="phoneLink">+ (595) 991 xxx xxx</a></span>
+            <span><img src="../assets/py.png" alt="" class="flag"> <a href="https://wa.me//+595971593188"
+                class="phoneLink">+ (595) 971 593188</a></span>
           </li>
         </div>
         <div class="row">
@@ -34,7 +34,7 @@
             <li class="listUl"><a href="#nosotros" @click="toggleMenu">Nosotros</a></li>
             <li class="listUl"><a href="#fleet" @click="toggleMenu">Flota</a></li>
             <li class="listUl">
-              <a @click="openPopup">Contacto</a>
+              <a @click="openPopup" style="cursor: pointer;">Contacto</a>
               
             </li>
             <li class="listUl">

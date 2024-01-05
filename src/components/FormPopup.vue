@@ -31,16 +31,17 @@
 </template>
 <script>
 import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2';
 export default {
   methods: {
     sendEmail(){
       emailjs.sendForm("service_aj3zb0n", "template_xcylbdt", this.$refs.form, "s26gdd6tw-DTgi3w5").then(
   (result) => {
-    console.log("Email enviado con éxito", result.text);
+    this.showSuccessAlert();
     this.closePopup();
   },
-  (error) => {
-    console.error("Error al enviar el email", error.text);
+  (error) => {  
+   this.showErrorAlert();
   }
 );
       // aqui dejamos para el metodo de envio
@@ -48,6 +49,20 @@ export default {
     closePopup(){
       this.$emit("close")
       // aqui la logica para cerrar
+    },
+    showSuccessAlert(){
+      Swal.fire({
+        icon: 'success',
+        title: 'Gracias por escribirnos!',
+        text: 'Nos pondremos en contacto en la brevedad!.'     
+      });
+    },
+    showErrorAlert(){
+      Swal.fire({
+        icon: 'error',
+        title: 'Ups! estamos experimientando problemas',
+        text: 'Por favor intente nuevamente mas tarde. '
+      })
     }
   }
   

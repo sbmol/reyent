@@ -5,7 +5,7 @@
         <h1 class="h1Leading">RESERVA TU AUTO HOY!</h1>
         <h3><span class="txtBgColor">3X2 reservando hoy!</span></h3>
         <h3></h3>
-        <p class="">Consegui el mejor precio del mercado, disponible para entrega en Asuncion y gran Asuncion.</p>
+        <p>Conseguí el mejor precio del mercado. Disponible para entregas en Asunción, Gran Asunción y Aeropuerto Silvio Pettirossi</p>
         <br>
         <a href="" class="btnColor">RESERVA AHORA</a>
 

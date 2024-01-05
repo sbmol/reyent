@@ -1,7 +1,7 @@
 <template class="bg">
   <div class="bg" id="fleet">
     <h2 class="titleFleet">Variedad de Vehiculos</h2>
-    <h3>Encontra el auto mas acorde a vos, en <span class="reyentColor">Reyent</span> te ofrecemos la gamma mas versatil del mercado</h3>
+    <h3>Encontra el auto mas acorde a vos, en <span class="reyentColor">Reyent</span> te ofrecemos la gama mas versatil del mercado</h3>
     <div class="mainFleet">
     <div class="mainBox">
       <div class="fleetCard">
