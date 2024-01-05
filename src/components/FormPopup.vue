@@ -150,5 +150,21 @@ button{
   top: 10px;
   right: 10px;
 }
+@media screen and (max-width: 480px) {
+  .form-popup-overlay{
+    display: flex;
+    flex-direction: column;
+  }
+  .formContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .formRow{
+    width: 80%;
+    
+  }
+  
+}
   
 </style>

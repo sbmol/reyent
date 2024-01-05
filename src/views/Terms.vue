@@ -27,7 +27,7 @@ export default {
   flex-direction: column;
   background: rgba(248, 250, 234, 0.7);
   width: 100%;
-  height: 400px;
+  height: auto;
 }
 .termsBox{
   justify-content: center;
