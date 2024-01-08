@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <header>
-      <div class="navHeader titleEffect">
+      <div class="navHeader titleEffect position">
         <div class="row titleEffect">
           <li class="listUl">
             <span><img src="../assets/py.png" alt="" class="flag"> <a href="https://wa.me//+595971593188"
@@ -97,6 +97,9 @@ body{
 }
 .h1Leading{
   letter-spacing: 2px;
+}
+.position{
+  position: fixed;
 }
 
 .bgHeader{
@@ -210,9 +213,10 @@ a {
   height: 15em;
 }
 .titleEffect{
-  background: #191919;
+  background-color: rgba(9, 38, 53, 0.8);
   padding: 5px;
   color: #BED754;
+  
 }
 .txtBgColor{
   background-color: #BED754;
