@@ -121,7 +121,7 @@ label {
   color: #fff;
   border: none;
   padding: 10px 20px;
-  margin-top: 10px;
+  margin: 10px auto 0;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -159,10 +159,14 @@ button{
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 12px;
   }
   .formRow{
     width: 80%;
     
+  }
+  .close-button{
+    position: static;
   }
   
 }
