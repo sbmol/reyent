@@ -8,7 +8,7 @@
     </div>
     <div class="leasingBox">
       <div class="imgPosition">
-        <img src="../assets/leasing.jpg" alt="" class="leasingImg">
+        <img src="../assets/leasing.png" alt="" class="leasingImg">
       </div>
       
     </div>
