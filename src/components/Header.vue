@@ -1,12 +1,14 @@
 <template>
   <div class="container">
     <header>
-      <div class="navHeader titleEffect position">
+      <div class="navHeader titleEffect">
         <div class="row titleEffect">
-          <li class="listUl">
+          <ul>
+            <li class="listUl">
             <span><img src="../assets/py.png" alt="" class="flag"> <a href="https://wa.me//+595971593188"
                 class="phoneLink">+ (595) 971 593188</a></span>
           </li>
+          </ul>
         </div>
         <div class="row">
           <ul class="listUl">
@@ -22,31 +24,28 @@
           </ul>
         </div>
       </div>
-      <div class="navHeader bgHeader">
+      <div  class="navHeader bgHeader">
         <div class="row">
           <ul class="listUl">
             <li class="listUl"><img src="../assets/reyent.png" alt="reyent" class="imgLogo"></li>
           </ul>
         </div>
-        <div class="row" >
-          <ul class="listUl">
+      
+        <div class="row">
+          
+          <ul class="listUl" >
             <RouterLink to="/">Inicio</RouterLink>
             <li class="listUl"><a href="#nosotros" @click="toggleMenu">Nosotros</a></li>
             <li class="listUl"><a href="#fleet" @click="toggleMenu">Flota</a></li>
             <li class="listUl">
               <a @click="openPopup" style="cursor: pointer;">Contacto</a>
-              
             </li>
             <li class="listUl">
               <router-link to="/leasing">Leasing</router-link>
             </li>
           </ul>
+          
         </div>
-        <!-- <div class="hamburger-menu" @click="toggleMenu">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-        </div> -->
       </div>
     </header>
   </div>
@@ -60,12 +59,18 @@ export default {
  data(){
   return{
     showPopup: false,
+    isMenuOpen: false,
   };
  },
  methods: {
   openPopup(){
     this.showPopup = true
   },
+  toggleMenu(){
+    this.isMenuOpen = !this.isMenuOpen;
+    document.body.classList.toggle('active-menu', this.isMenuOpen);
+    
+  }
  },
  components: {
   FormPopup,
@@ -95,12 +100,26 @@ body{
  
   
 }
+.responsive-menu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.responsive-menu.active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px; /* O ajusta según tus necesidades */
+  right: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1;
+}
 .h1Leading{
   letter-spacing: 2px;
 }
-.position{
-  position: fixed;
-}
+
 
 .bgHeader{
   background-color: #F8FAEA;
@@ -213,7 +232,7 @@ a {
   height: 15em;
 }
 .titleEffect{
-  background-color: rgba(9, 38, 53, 0.8);
+  background-color: rgba(9, 38, 53, 1);
   padding: 5px;
   color: #BED754;
   
@@ -247,44 +266,12 @@ a {
   border-bottom: none;
   border-right: 5px solid #F3F8FF;
 }
-#navLinks {
-  display: flex;
-  flex-direction: column;
-  background-color: #092635;
-  position: absolute;
-  top: 60px;
-  right: 0;
-  width: 100%;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s, visibility 0.3s;
-}
 
-#navLinks.show {
-  opacity: 1;
-  visibility: visible;
-}
-
-#navLinks li {
-  margin-bottom: 10px;
-}
-
-#navLinks a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.hamburger-menu {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  padding-left: 10px;
-}
 
 .bar {
   width: 25px;
   height: 3px;
-  background-color: #fff;
+  background-color: #191919;
   margin: 5px 0;
 }
 .phoneLink{
@@ -324,13 +311,6 @@ a {
   }
   a{
     color: #191919;
-  }
-  #navLinks {
-    display: flex;
-  }
-
-  .hamburger-menu {
-    display: flex;
   }
   .phoneLink{
     font-size: 12px;
@@ -373,6 +353,20 @@ a {
   .titleEffect{
     display: flex;
     align-items: center;
+  }
+  .responsive-menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .listUl {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .listUl.show {
+    display: flex;
   }
 }
   
