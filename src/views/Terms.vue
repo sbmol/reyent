@@ -272,6 +272,9 @@ li{
     display: flex;
     width: 100%;
   }
+  .termsBox{
+    width: 100%;;
+  }
   
 }
 </style>

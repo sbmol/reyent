@@ -2,7 +2,7 @@
     <div class="form-popup-overlay">
       <div class="formContainer">
         <button @click="closePopup" class="close-button">Cerrar</button>
-        <div class="formRow">
+        <div class="formRow txtDisplay">
           <img src="../assets/reyent.png" alt="reyent" class="imgLogoForm">
           <h4><b>Contactanos !!</b></h4>
           <p>Completa el formulario de contacto, para solicitar cotizacion o informacion sobre los servicios que
@@ -15,6 +15,7 @@
           <p><i class="fa-solid fa-wrench"></i> <a href="https://wa.me/595981181166" target="_blank"> +595 981 181166</a></p>
         </div>
         <div class="formRow">
+          <h3 class="txtOnlyMobile">Envianos tu consulta</h3>
           <form ref="form" @submit.prevent="sendEmail">
             <label>Nombre:</label>
             <input name="user_name" type="text" required class="input-field"  />
@@ -150,10 +151,19 @@ button{
   top: 10px;
   right: 10px;
 }
+.close-button-mobile{
+  display: block;
+  margin-top: 10px;
+}
+.txtOnlineMobile{
+  display: hidden;
+}
 @media screen and (max-width: 480px) {
   .form-popup-overlay{
     display: flex;
     flex-direction: column;
+    width: 100%;
+    height: auto;
   }
   .formContainer{
     display: flex;
@@ -162,11 +172,14 @@ button{
     font-size: 12px;
   }
   .formRow{
-    width: 80%;
+    width: 80%;;
     
   }
   .close-button{
     position: static;
+  }
+  .txtDisplay{
+    display: none;
   }
   
 }
