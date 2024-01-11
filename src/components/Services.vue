@@ -1,7 +1,9 @@
 <template>
   <div class="serviceContainer" id="nosotros">
-    <h2>Por que elegir nuestro servicios</h2>
-    <p class="secoundaryTitle">Descubre un servicio de alquiler de automóviles excepcional con nuestro equipo experto. En <span class="txtColor">REYENT</span>, no solo encontrarás vehículos de primera categoría, sino también beneficios exclusivos diseñados para ti. Experimenta la diferencia con expertos locales que hacen que cada viaje sea especial. ¡Bienvenido a una experiencia única en cada kilómetro!</p>
+    <h2 class="txtColor">PORQUE ELEGIRNOS</h2>
+    <p class="secoundaryTitle">Por que somos una empresa nacional, ofrecemos servicio de alquiler de autos, donde nuestra confortable flota esta respaldada por un equipo de trabajo que se dedica o proveerle seguridad y eficiencia. Es una empresa donde encontrara que precio, servicio y confort van de la mano.
+Los invitamos a  tener una experiencia única kilómetro a kilómetro por las rutas de Paraguay acompañados por nuestro staff antes y durante su viaje.
+Bienvenido a <span class="txtColor">REYENT</span>, bienvenido a PARAGUAY!</p>
     <div class="serviceBox">
       <div class="serviceCard">
         <img src="../assets/percent.svg"  alt="" class="svgImg">

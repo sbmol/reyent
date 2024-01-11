@@ -1,4 +1,5 @@
 <template>
+ 
   <Header />
   <Masterhead />
   <Services />
@@ -24,4 +25,8 @@ export default {
     Footer,
 },
 };
+
 </script>
+<style>
+
+</style>

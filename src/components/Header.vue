@@ -27,7 +27,7 @@
       <div  class="navHeader bgHeader">
         <div class="row">
           <ul class="listUl">
-            <li class="listUl"><img src="../assets/reyent.png" alt="reyent" class="imgLogo"></li>
+            <img src="../assets/reyent.png" alt="reyent" class="imgLogo">
           </ul>
         </div>
       
@@ -180,6 +180,8 @@ a {
   font-weight: bold;
   text-transform: uppercase;
 }
+
+
 .buttom{
   width: 100px; 
   height: 30px; 
@@ -196,7 +198,11 @@ a {
 }
 .imgLogo{
   width: 10.625em;
-  height: 3.375em;
+  height: auto;
+  text-decoration: none !important;
+}
+img{
+  text-decoration: none;
 }
 
 /* MASTERHEAD INSIDE HEADER */

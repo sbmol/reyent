@@ -9,9 +9,9 @@
         <div>
           <img src="../assets/picanto.png" alt="picanto" class="hb20">
         </div>
-        <p><span class="txtCarTitle">Kia Picanto</span></p>
+        <p><span class="txtCarTitle">COMPACTO</span></p>
         <div class="txtCentered"><img src="../assets/transmission.svg" alt="" class="icons"> TRANSMISION MECANICA</div>
-        <div class="txtCentered"><img src="../assets/aa.svg" alt="" class="icons"> MOTOR 1.000 CC</div>
+        <!-- <div class="txtCentered"><img src="../assets/people.svg" alt="" class="icons"> MOTOR 1.000 CC</div> -->
         <div class="txtCentered"><img src="../assets/engine.svg" alt="" class="icons"> Aire Acondicionado</div>
 
 
@@ -20,21 +20,21 @@
     <div class="mainBox">
       <div class="fleetCard">
         <div>
-          <img src="../assets/hb20s.png" alt="" class="hb20">
+          <img src="../assets/soluto.png" alt="" class="hb20">
         </div>
-      <p><span class="txtCarTitle">Hyundai HB20s</span></p>
+      <p><span class="txtCarTitle">INTERMEDIO</span></p>
       <div class="txtCentered"><img src="../assets/transmission.svg" alt="" class="icons"> TRANSMISION AUTOMATICA</div>
-        <div class="txtCentered"><img src="../assets/aa.svg" alt="" class="icons"> MOTOR 1.400 CC</div>
+        <!-- <div class="txtCentered"><img src="../assets/aa.svg" alt="" class="icons"> MOTOR 1.400 CC</div> -->
         <div class="txtCentered"><img src="../assets/engine.svg" alt="" class="icons"> Aire Acondicionado</div>
       </div>
     </div>
     <div class="mainBox">
       
       <div class="fleetCard">
-        <p> <img src="../assets/creta.png" alt="" class="creta"></p>
-      <p><span class="txtCarTitle">Hyundai Creta</span></p>
-      <div class="txtCentered"><img src="../assets/transmission.svg" alt="" class="icons"> TRANSMISION MECANICA</div>
-        <div class="txtCentered"><img src="../assets/aa.svg" alt="" class="icons"> MOTOR 2.000 CC</div>
+        <p> <img src="../assets/sportage.png" alt="" class="creta"></p>
+      <p><span class="txtCarTitle">SUV</span></p>
+      <div class="txtCentered"><img src="../assets/transmission.svg" alt="" class="icons"> TRANSMISION AUTOMATICA</div>
+        <!-- <div class="txtCentered"><img src="../assets/aa.svg" alt="" class="icons"> MOTOR 2.000 CC</div> -->
         <div class="txtCentered"><img src="../assets/engine.svg" alt="" class="icons"> Aire Acondicionado</div>
         
 

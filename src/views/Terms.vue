@@ -1,5 +1,6 @@
 <template>
   <Header />
+  
   <div class="containerTerms">
     <div class="termsBox">
       <h2>Términos y condiciones de <span class="titleTerm">REYENT</span></h2>
@@ -46,30 +47,21 @@
           </thead>
           <tbody>
             <tr>
-              <td>EDAR</td>
+              <td>COMPACTO</td>
               <td>700</td>
               <td>USD</td>
             </tr>
             <tr>
-              <td>CDAR</td>
+              <td>INTERMEDIO</td>
               <td>700</td>
               <td>USD</td>
             </tr>
             <tr>
-              <td>IDAR</td>
-              <td>700</td>
+              <td>SUV</td>
+              <td>1000</td>
               <td>USD</td>
             </tr>
-            <tr>
-              <td>IFAR</td>
-              <td>1.000</td>
-              <td>USD</td>
-            </tr>
-            <tr>
-              <td>PFAR</td>
-              <td>1.000</td>
-              <td>UDS</td>
-            </tr>
+            
           </tbody>
         </table>
 
@@ -104,16 +96,15 @@
     <h3 class="titleTerms">Cobertura daño (CDW) & Protección contra robo (TP)</h3>
     <p><i class="fa-solid fa-angles-right arrowColor"></i> Mediante la contratación de la cobertura daño es posible
       limitar la responsabilidad en caso de deterioro del vehículo a una determinada franquicia.</p>
-    <q><b>Si el arrendatario contrata la CDW, responde solamente con la siguiente franquicia:700,00 USD (EDAR, CDAR,
-        IDAR)
-        1.000,00 USD (IFAR, PFAR)</b></q>
+    <q><b>Si el arrendatario contrata la CDW, responde solamente con la siguiente franquicia:700,00 USD (COMPACTO, INTERMEDIO)
+        1.000,00 USD (SUV)</b></q>
     <p>Si el arrendatario declina de la cobertura daños, es responsable de todos los daños producidos en el vehículo de alquiler y responde hasta la cuantía íntegra del valor del vehículo.
 Mediante la contratación de la protección contra robo puede limitarse la responsabilidad a una determinada franquicia en caso de pérdida del vehículo.
 </p>
     <p><i class="fa-solid fa-angles-right arrowColor"></i> Si el arrendatario contrata el protección contra robo, responde solamente con la siguiente franquicia:</p>
     <ul>
-      <li>700,00 USD (EDAR, CDAR, IDAR)</li>
-      <li>1.000,00 USD (IFAR, PFAR)</li>
+      <li>700,00 USD (COMPACTO, INTERMEDIO)</li>
+      <li>1.000,00 USD (SUV)</li>
     </ul>
     <p>Si el arrendatario declina la protección contra robo es responsable de la pérdida del vehículo y responderá hasta la cuantía del valor del vehículo.</p>
 
@@ -122,8 +113,8 @@ Mediante la contratación de la protección contra robo puede limitarse la respo
 </p>
     <p>Si el arrendatario contrata La cobertura daños y protección contra robo con franquicia reducida, responde solamente con la siguiente franquicia:</p>
     <ul>
-      <li>400,00 USD (EDAR,CCAR, ICAR, CFAR)</li>
-      <li>600,00 USD (FDAR, PFAR)</li>
+      <li>400,00 USD (COMPACTO, INTERMEDIO)</li>
+      <li>600,00 USD (SUV)</li>
     </ul>
 
     <h3 class="titleTerms">Protección ruedas y cristales (GT)</h3>
@@ -200,7 +191,8 @@ export default {
 
   }
   
-}
+};
+
 </script>
 <style>
 .containerTerms{
