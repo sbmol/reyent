@@ -7,7 +7,8 @@
         <h3></h3>
         <p>Conseguí el mejor precio del mercado. Disponible para entregas en Asunción, Gran Asunción y Aeropuerto Silvio Pettirossi</p>
         <br>
-        <a href="" class="btnColor">RESERVA AHORA</a>
+        <!-- <a href="" class="btnColor">RESERVA AHORA</a> -->
+        <router-link to="/reservations/cotizar" class="btnColor">RESERVA AHORA</router-link>
 
       </div>
     </div>
